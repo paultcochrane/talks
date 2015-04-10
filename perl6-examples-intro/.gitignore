@@ -1,0 +1,9 @@
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.swp
+*.vrb
+odp_intro.pdf
