@@ -12,16 +12,52 @@
     \titlepage
 \end{frame}
 
+my name's Paul, I'm currently a freelance software developer and I just
+recently stopped working for this company (it's a start up and funding ran
+out for devs, however funding is upcoming).
+
+\begin{frame}
+    DNPS logo large
+\end{frame}
+
+\begin{frame}
+    But that's not important right now
+\end{frame}
+
+what *is* important, is that the company focusses on sea ice, and as part of
+running the company's social network presence (I'm a jack of all trades), I
+came across a talk by David Wasdell on our Twitter feed about Arctic
+feedback dynamics and the melting of Arctic sea ice.  I got to 11:22 minutes
+and noticed something which didn't match current observations.
+
 \begin{frame}
 Arctic Feedback Dynamics Presentation by David Wasdell (Part 1)
 https://www.youtube.com/watch?v=AjZaFjXfLec
 at about 11:22 mentions exponential extrapolation and that 2015 all ice will
 disappear in summer.  The funny thing is, it does't look like it.
 
+His talk is actually from 2013, with data from 2012 so it's not too bad,
+however the conclusion that Arctic sea ice will disappear in 2015 doesn't
+look like it's going to happen.
+
 sea ice extent data is available for free online, back to the 70's.  I can
 run the investigation similarly myself...
 \end{frame}
 
+first quick look at data with a spreadsheet, however that's not fun, and I
+want to be able to run the program more often and maybe fiddle with things a
+bit more than I can with a spreadsheet.  So, I pulled out my favourite swiss
+army chainsaw.
+
+- grab data (LWP::Simple)
+- hey, it's CSV (Text::CSV)
+- comes in two files, "archive" and "near real time (nrt)"
+- stitch them together
+- extract minima for a given year
+- plot minima (Gnuplot bindings???, maybe SVG::Plot???)
+- fit library?  Linear regression from scratch?
+- what is the equation for the the fit?
+- what does the extrapolation tell us?
 
 \begin{frame}
 linear is obviously wrong
