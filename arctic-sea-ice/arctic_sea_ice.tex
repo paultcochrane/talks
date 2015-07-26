@@ -36,13 +36,16 @@ and noticed something which didn't match current observations.
 Arctic Feedback Dynamics Presentation by David Wasdell (Part 1)
 https://www.youtube.com/watch?v=AjZaFjXfLec
 at about 11:22 mentions exponential extrapolation and that 2015 all ice will
-disappear in summer.  The funny thing is, it does't look like it.
+disappear in summer.  The funny thing is, it does't look like it (doesn't
+really fit reality).
 
-His talk is actually from 2013, with data from 2012 so it's not too bad,
+- "prediction" via extrapolation -> exponential fit
+
+His talk is actually from 2013, with data from 2012 (dates correct?) so it's not too bad,
 however the conclusion that Arctic sea ice will disappear in 2015 doesn't
 look like it's going to happen.
 
-sea ice extent data is available for free online, back to the 70's.  I can
+sea ice extent data is available for free online, back to the 70's (NSIDC).  I can
 run the investigation similarly myself...
 \end{frame}
 
@@ -58,8 +61,12 @@ army chainsaw.
 - extract minima for a given year
 - plot minima (Gnuplot bindings???, maybe SVG::Plot???)
 - fit library?  Linear regression from scratch?
-- what is the equation for the the fit?
+- what is the equation for the the fit?  (Python module, since there isn't a
+Perl module)
+- high school maths -> solve for y=0
+- can one reproduce the old result from the video?
 - what does the extrapolation tell us?
+- mention technologies/modules used
 
 \begin{frame}
 linear is obviously wrong
@@ -72,12 +79,16 @@ exponential doesn't give as good a fit as 2nd order polynomial
 	\item Don't believe everything you read in blogs
 	\item Don't believe every video you see online
 	\item FFS don't believe me!
-	\item The tools are in \emph{your} hands
+	\item Critically evalutate everything
+	\item The tools are in \emph{your} hands, the data is available for
+	    free, can come to own conclusion.
 	    \begin{itemize}
 		\item Perl, CPAN, freely available data, your brain
 	    \end{itemize}
     \end{itemize}
 \end{frame}
+
+
 
 
 % XXX: "I want to believe" poster crossed out?
