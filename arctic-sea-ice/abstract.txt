@@ -1,0 +1,13 @@
+Nachschauen, mit Perl, wie das ewige Eis verschwindet
+
+Das Klima ist ein sehr komplexes Thema; es gibt viele Informationen im Netz
+mit unterschiedlichen Aussagen bzw. Vorhersagen. Man muss stets die Aussagen
+aller Experten mit einem kritischen Auge betrachten. Das ist nicht nur
+sinnvoll, sondern auch wissenschaftliche Pflicht.
+
+Dieser Vortrag erzählt über eine verwirrende Prognose, die in einem Video
+eines Klimaforschers vorkam, und wie ich Perl benutzt habe zumindest ein
+Ergebnis zu verifizieren und auf ähnliche Art und Weise eine eigene "Prognose"
+zu machen, die jeder auch machen kann, da die Werkzeuge zur Hand liegen.
+
+Vortrag auf Deutsch; Folien auf Englisch.
