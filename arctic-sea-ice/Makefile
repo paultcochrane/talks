@@ -10,5 +10,7 @@ $(PDF): $(TEX)
 view: $(PDF)
 	evince $< & 2> /dev/null
 
+show: view
+
 clean:
 	rm -f *.aux *.log *.nav *.out *.snm *.toc $(PDF)
