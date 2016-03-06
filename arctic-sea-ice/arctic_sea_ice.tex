@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[notes]{beamer}
 
 \usetheme{m}
 \usepackage{FiraSans}
@@ -6,7 +6,7 @@
 \usepackage[british]{babel}
 
 \title{Observing Arctic sea ice with Perl}
-\author{Paul Cochrane}
+\author{Paul Cochrane (\texttt{[ptc]}, \texttt{@peateasea})}
 
 \begin{document}
 
@@ -14,23 +14,26 @@
     \titlepage
 \end{frame}
 
-my name's Paul, I'm currently a freelance software developer and I just
-recently stopped working for this company (it's a start up and funding ran
-out for devs, however funding is upcoming).
-
 \begin{frame}
     DNPS logo large
+
+    \note{my name's Paul, I'm currently a freelance software developer and I
+    just recently stopped working for this company (it's a start up and
+    funding ran out for devs, however funding is upcoming).}
+
+    \note{the company focusses on sea ice}
+
 \end{frame}
 
 \begin{frame}
-    But that's not important right now
-\end{frame}
+    twitter logo
 
-what *is* important, is that the company focusses on sea ice, and as part of
-running the company's social network presence (I'm a jack of all trades), I
-came across a talk by David Wasdell on our Twitter feed about Arctic
-feedback dynamics and the melting of Arctic sea ice.  I got to 11:22 minutes
-and noticed something which didn't match current observations.
+    \note{and as part of running the company's social network presence (I'm
+    a jack of all trades), I came across a talk by David Wasdell on our
+    Twitter feed about Arctic feedback dynamics and the melting of Arctic sea
+    ice.}
+
+\end{frame}
 
 \begin{frame}
 Arctic Feedback Dynamics Presentation by David Wasdell (Part 1)
@@ -39,12 +42,71 @@ at about 11:22 mentions exponential extrapolation and that 2015 all ice will
 disappear in summer.  The funny thing is, it does't look like it (doesn't
 really fit reality).
 
-- "prediction" via extrapolation -> exponential fit
 
-His talk is actually from 2013, with data from 2012 (dates correct?) so it's not too bad,
-however the conclusion that Arctic sea ice will disappear in 2015 doesn't
-look like it's going to happen.
+    image of you tube video title frame
 
+    \note{Arctic Feedback Dynamics Presentation by David Wasdell (Part 1)}
+
+    \note{interesting video, interesting science, however one thing didn't
+    match current observations}
+
+\end{frame}
+
+\begin{frame}
+
+    \begin{figure}
+	\includegraphics[width=0.8\textwidth]{arctic_feedback_dynamics_extrapolation_slide.png}
+    \end{figure}
+
+    image of you tube video frame at 11:22 minutes
+
+    \note{extrapolation of fit "predicts" that all ice will
+    disappear in the northern summer of 2015}
+
+\end{frame}
+
+\begin{frame}
+
+    image of arctic sea ice extent in summer of 2015 (third lowest since
+    measurements began)
+
+    Evidence suggests otherwise, so \ldots huh?
+
+\end{frame}
+
+\begin{frame}
+
+    background info
+
+    the talk is from 2013, using data from 2012 (are the dates correct
+    here?; confirm result using program later in talk?)
+
+    used a "curved" fit of the data and extrapolated from that to conjecture
+    that in roughly 2015 the arctic sea ice would disappear in summer
+
+    not clear what kind of fit is shown
+
+    the point David Wasdell makes, is that one can't use a linear
+    interpolation as the basis of recommendations for decision makers
+
+    so maybe it looked that bad back then
+
+\end{frame}
+
+\begin{frame}
+
+    the arctic sea ice extent data are freely available online (back to the
+    70's), so we can check the analysis and maybe reproduce the result
+
+    with up to date data we can also make our own "prediction"
+
+    link to NSIDC
+
+    NSIDC logo
+
+\end{frame}
+
+\begin{frame}
 sea ice extent data is available for free online, back to the 70's (NSIDC).  I can
 run the investigation similarly myself...
 \end{frame}
@@ -60,7 +122,7 @@ army chainsaw.
 - stitch them together
 - extract minima for a given year
 - plot minima (Gnuplot bindings???, maybe SVG::Plot???)
-- fit library?  Linear regression from scratch?
+- fit library?  Linear regression from scratch?  (Algorithm::CurveFit)
 - what is the equation for the the fit?  (Python module, since there isn't a
 Perl module)
 - high school maths -> solve for y=0
